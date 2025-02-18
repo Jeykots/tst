@@ -70,6 +70,16 @@ function saludar():void{
 }
 // saludar();
 console.log(saludar());
+// internamente hace una validadcion 
+let respuesta:unknown;
+respuesta = 25;
+respuesta = "Hola";
+
+
+//  null:  vacio que se asigna 
+// undefined :no definido
+let respta2  = null;
+let respta3  = undefined;
 
 
 

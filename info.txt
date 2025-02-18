@@ -1,0 +1,42 @@
+git config --global user.name 'Jesus Vilca'
+git config --global user.email 'jeykotvt@gmail.com'
+
+git config -h
+
+git commit
+git commit --amend
+
+git branch ramita
+git switch ramita
+git switch -c ramita
+git checkout master
+
+git branch -v
+
+----- 18/02/2025 -----
+
+npm i -g typescript
+tsc --version
+
+node index.js
+____________________
+                    
+bun - deno - node   
+____________________
+
+npm init
+npm -y init
+
+
+compilar ts a js
+==>   tsc index.ts
+____________________
+                    
+bun - deno - node   
+____________________
+
+npm i -g @angular/cli
+ng --version
+ng v
+
+ng --help
