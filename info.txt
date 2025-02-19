@@ -40,3 +40,6 @@ ng --version
 ng v
 
 ng --help
+
+
+https://www.luisllamas.es/typescript-tipos-de-datos

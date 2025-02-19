@@ -61,6 +61,7 @@ prueba = [];
 
 let prueba2 = 25;
 
+// Tipos de datos de TS
 
 // void
 function saludar():void{
@@ -69,7 +70,7 @@ function saludar():void{
   // return varia;
 }
 // saludar();
-console.log(saludar());
+// console.log(saludar()); unf
 // internamente hace una validadcion 
 let respuesta:unknown;
 respuesta = 25;
@@ -82,6 +83,119 @@ let respta2  = null;
 let respta3  = undefined;
 
 
+// let tipo5:string|null;
+let tipo5:string|undefined;
+// Ya esta definido
+// tipo5 = "hola";
+tipo5?.concat;
+
+// tipo5.length;
+// null seft
+
+// / ***** Casteo o asercion ***** /
+
+// let casteo:any = " ";
+// // (casteo as string).
+
+// let casteo2 = (casteo as Array<string>);
+// casteo = [25];
+
+let casteo: Array<number>;
+casteo = [25];
+let caste2 = (casteo as Array<number>)
+
+// let caste2 = 
+
+let casteo3 = 25 as number;
+let caste4:number;
+
+
+let casteo5;
+casteo5 = "hola" as string | boolean;
+casteo5 = true;
+
+// ______
+let casteo8;
+
+// casteo8 = <string | number> "ingCivil";
+
+// const canvas = document.getElementById("canvas");
+// canvas.
+// const canvas2 =<HTMLCanvasElement> document.getElementById("canvas");
+// const canvas3 = document.getElementById("canvas");
+
+// Enums
+
+export enum Carreras {
+  Uno  = "ing de ST",
+  Dos  = "Diseño grafico",
+  Tres = "Administración" ,
+} 
+
+type Carreras2 = "ing de ST" | "Diseño grafico" | "Administracion"; 
+
+const carrera = Carreras.Tres.toUpperCase();
+const carrera2 = Carreras["Tres"];///
+const carrera5 = "administracion";
+const carrera3 = "Administracion";
+const carrera4 = "administración";
+
+console.log(carrera)
+console.log(`La wea es : ${carrera2}`)
+// console.log(carrera)
+
+
+type tipo = number | boolean;
+
+type Carrerass = "ing de ST" | "Diseño grafico" | "Administracion"; 
+
+// interface Partial{
+//   name:string,
+//   apellido:string,
+//   edad:tipo,
+// }
+
+
+type Partial = {
+  name:string,
+  apellido:string,
+  edad:tipo,
+}
+
+// Interfaces 
+interface Estudiante extends Partial{
+  aprobado?:boolean,
+  carrera:Carrerass,
+  saludar?:()=>string,
+  saludar2?:()=>void,
+  direccion:Array<string>,
+}
+
+let estudiante:Estudiante = {
+  name:"Juan",
+  apellido:"Suares",
+  edad: 25,
+  carrera:"Diseño grafico",
+  saludar2:()=>{},
+  direccion:["La wea respladeciente"]
+}
+
+let estudiante2:Estudiante ={
+  name:"Juan",
+  apellido:"Suares",
+  edad: 25,
+  aprobado:true,
+  carrera:"Administracion",
+  saludar:()=>{
+    return "Hola"
+  },
+  direccion:["Jr. Wari"]
+};
+
+estudiante2.edad = 28;
+// estudiante2.edad = 28;
+
+console.log({estudiante2});
 
 
 
